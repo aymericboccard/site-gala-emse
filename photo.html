@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Photos - Gala Illumines 2017</title>
+	<meta charset="utf-8" />
+	<meta name="keywords" content="gala, gala 2017,emse,gala emse, gala emse 2017,gala illumines,illumines, mines, mines sainté, école des mines" />
+	<meta name="description" content="Afin de célébrer l’entrée dans son troisième siècle d’histoire, ainsi que le diplôme de la promotion 2013, l’École des Mines (EMSE) organise son Gala le 4 février 2017. A cette occasion, les élèves étudiant actuellement à l’École retrouvent les nouveaux diplômés et les anciennes promotions, et rejoignent corps enseignant et personnel administratif pour une soirée de prestige." />
+
+	<link rel="stylesheet" href="styletest.css" type="text/css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+
+	<script type="text/javascript" src="Anim1.js"></script>
+	<script type="text/javascript" src="Anim2.js"></script>
+	<script type="text/javascript" src="compteur.js"></script>
+ </head>
+
+
+<body onresize="myFunction()" onload="myFunction()"  >
+
+<div id="bgsidebar"></div>
+
+<div id="banner"></div>
+
+
+	<nav id="menu">
+		<a class="dmenu" id="countbox1"></a>
+		<a class="dmenu" href="index.html">Accueil</a>
+		<a class="dmenu" href="about.html">À Propos</a>
+		<a class="dmenu" href="reserver.html">Réserver</a>
+		<a class="dmenu" href="acces.html">Hôtels et accès</a>
+		<a class="dmenu" href="photo.html">Photos - Vidéos</a>
+
+	</nav>
+</div>
+
+<div id=menumob>
+	<div id=dmenumobo></div>
+	<div id=dmenumobf></div>
+</div>
+	
+	<nav id="menuder">
+		<a class="dmenuder" href="index.html">Accueil</a>
+		<a class="dmenuder" href="about.html">À Propos</a>
+		<a class="dmenuder" href="reserver.html">Réserver</a>
+		<a class="dmenuder" href="acces.html">Hôtels et accès</a>
+		<a class="dmenuder" href="oups.html">Photos - Vidéos</a>
+		<a class="dmenuder" href="programme.html">Programme</a>
+		<a class="dmenuder" href="diner.html">Dîner</a>
+		<a class="dmenuder" href="spectacle.html">Spectacle</a>
+		<a class="dmenuder" href="defile.html">Défilé</a>
+		<a class="dmenuder" href="dj.html">Groupes et DJ</a>
+		
+		
+	</nav>
+
+<section>
+	<div id="premier"></div>
+	<div id="premiermob"></div>
+</section>
+
+		<aside id="sidebar">
+			<div id="sidebarContent">
+				<h3>En détail</h3>
+					<div id="liste">
+						<a class="daside" href="programme.html">Programme</a>
+						<a class="daside" href="diner.html">Dîner</a>
+						<a class="daside" href="spectacle.html">Spectacle</a>
+						<a class="daside" href="defile.html">Défilé</a>
+						<a class="daside" href="dj.html">Groupes et DJ</a>
+						
+					</div>
+			</div>
+		</aside>
+
+<section id="conteneur">
+
+
+<div id="articles">
+	<div id="nomPage">Photos - Vidéos</div>
+
+	<div class="rubrique">
+		<h3> </h3>
+			<p> Les photos/vidéos seront disponibles ici après l'évènement!</p>
+	</div>
+</div>
+
+
+
+</div>
+</section>
+
+<footer id="footer">
+	<div id="logo"></div>
+	<div id="reseauxsociaux">
+		<a class="reseau" href="https://twitter.com/galaillumines">
+			<div id="reslogo1"></div>
+			<div id="restext1">@GalaIllumines2017</div>
+		</a>
+		<a class="reseau" href="https://www.facebook.com/Gala-Illumines-2017-1189210447819706">
+			<div id="reslogo2"></div>
+			<div id="restext2">Gala Illumines 2017</div>
+		</a>
+	</div>
+
+	<div id="sponsors">
+		<h4>Sponsors</h4>
+		<a href="https://www.mazarsrecrute.fr/" target="_blank"><img id="sponsor1" src="Images/logoMazars.png"></a>
+		<div id="sponsor2"></div>
+
+	</div>
+	<div id="sponsors">
+		<h4 style="color: #041d36">.</h4>
+		<a href="http://www.nexialog.com/" target="_blank"><img id="sponsor4" src="Images/nexialog.png"></a>
+		<div id="sponsor3"></div>
+		
+
+	</div>
+
+	<div id="contact">
+		<h4>Contact et Crédit</h4>
+			<ul>
+				<li><a href="mailto:galaillumines@gmail.com">Informations</a></li>
+				<li><a href="mailto:galaillumines@gmail.com">Sponsors</a></li>
+			</ul>
+		<div id="credit"><p>&copy; Gala des Mines de Saint-Étienne, tous droits réservés</p></div>
+	</div>
+
+</footer>
+
+
+
+</body>
+
+<!-- ..........................script...................................... -->
+
+<script>
+// Code en JQuery pour fixer le menu en fonciton du scroll et pour afficher le monu mobile
+
+
+
+	$('#sidebarContent').addClass("nonfixedSideBar");
+	ScrollMenuFixe = 300;
+
+
+	$(window).scroll(
+		function() {
+				if ($(window).width()>780){		
+				if ($(window).scrollTop() > ScrollMenuFixe) {
+					// fixed
+					$('#menu').addClass("fixedTop");
+					$('#premier').addClass("fixedTop2");
+					$('#sidebarContent').addClass("fixedSideBar");
+					$('#sidebarContent').removeClass("nonfixedSideBar");
+//					$("#menu").css("box-shadow", "0px 2px 20px #cccccc");
+				} else {
+					// unfixed
+					$('#menu').removeClass("fixedTop");
+					$('#premier').removeClass("fixedTop2");
+					$('#sidebarContent').removeClass("fixedSideBar");
+					$('#sidebarContent').addClass("nonfixedSideBar");
+//					$("#menu").css("box-shadow", "0px 0px 0px #999999");
+				}
+				}
+	});
+	
+	$("#dmenumobo").click(function(){
+		$("#menuder").css("display","flex");
+		$("#dmenumobo").css("display","none");
+		$("#dmenumobf").css("display","flex");
+		$("#conteneur").css("margin-left","200px");
+//		$("#menumob").css("box-shadow", "0px 2px 20px #cccccc");
+	});
+	$("#dmenumobf").click(function(){
+		$("#menuder").css("display","none");
+		$("#dmenumobo").css("display","flex");
+		$("#dmenumobf").css("display","none");
+		$("#conteneur").css("margin-left","0px");
+//		$("#menumob").css("box-shadow", "0px 0px 0px #cccccc");
+	});
+	
+	
+</script>
+
+
+<!-- crédit Thomas Gensous/Charles Couprie ICM2014 -->
+
+</html>
