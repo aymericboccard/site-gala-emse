@@ -110,6 +110,10 @@ aside h3 {
   padding: 10px;
 }
 
+#side {
+  display: inline-block;
+}
+
 /*--------------------------------------------------------------*/
 /*   menu deroulant                                             */
 /*--------------------------------------------------------------*/
@@ -199,6 +203,7 @@ section h1 {
   font-family: sans-serif;
   font-size: 32px;
   padding: 10px;
+  font-variant: small-caps;
 }
 
 section h2 {
@@ -208,6 +213,8 @@ section h2 {
   padding: 0px 25px;
 }
 
-.align {
-  display: inline-block;
+section p {
+  padding: 7px 45px;
+  text-align: justify;
+  font-family: sans-serif;
 }
