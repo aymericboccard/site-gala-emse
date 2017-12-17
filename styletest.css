@@ -33,7 +33,7 @@ body {
    /* For desktop: */
    .col-1 {width: 8.33%;}
    .col-2 {width: 16.66%;}
-   .col-3 {width: 24,9%;}
+   .col-3 {width: 25%;}
    .col-4 {width: 33.33%;}
    .col-5 {width: 41.66%;}
    .col-6 {width: 50%;}
@@ -85,8 +85,9 @@ body {
 
 aside {
   display: inline-block;
-  background-color: #dddddd;
   padding-bottom: 8px;
+  position: sticky;
+  top: 0px;
 }
 
 aside a {
@@ -112,6 +113,9 @@ aside h3 {
 
 #side {
   display: inline-block;
+  background-color: #dddddd;
+  position: absolute;
+  top: 350px;
 }
 
 /*--------------------------------------------------------------*/
@@ -198,6 +202,7 @@ footer h4 {
 section {
   display: inline-block;
   vertical-align: top;
+  margin-left: 25%;
 }
 
 section h1 {
