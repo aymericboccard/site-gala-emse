@@ -8,6 +8,7 @@ body {
   margin: auto;
   padding: 0;
   height: 100%;
+  background-image: url("Images/fond.png");
 }
 
 /* For mobile phones: */
@@ -118,7 +119,8 @@ aside h3 {
 
 #side {
   display: inline-block;
-  background-color: #dddddd;
+  /*background-color: #dddddd;*/
+  background-image: url("Images/sidebar.png");
   position: absolute;
   top: 350px;
   z-index: -1;
