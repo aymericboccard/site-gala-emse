@@ -61,23 +61,29 @@ body {
 /*--------------------------------------------------------------*/
 
 #menu {
-  background-image: url("Images/Menu.png");
+  /*background-image: url("Images/Menu.png");*/
+  background-color: #002040;
   display: block;
-  height: 50px;
   width: 100%;
+  box-shadow: 0px 3px 3px black;
+
 }
 
 #menu a {
   text-decoration: none;
   display: inline-block;
   color: white;
-  line-height: 38px;
+  line-height: 50px;
   font-size: 28px;
   font-variant: small-caps;
   font-family: sans-serif;
   text-align: center;
 }
 
+#main {
+  position: sticky;
+  top: 0px;
+}
 
 /*--------------------------------------------------------------*/
 /*   menusidebar                                                */
@@ -87,7 +93,7 @@ aside {
   display: inline-block;
   padding-bottom: 8px;
   position: sticky;
-  top: 0px;
+  top: 50px;
 }
 
 aside a {
@@ -116,6 +122,7 @@ aside h3 {
   background-color: #dddddd;
   position: absolute;
   top: 350px;
+  z-index: -1;
 }
 
 /*--------------------------------------------------------------*/
