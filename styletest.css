@@ -61,8 +61,7 @@ body {
 /*--------------------------------------------------------------*/
 
 #menu {
-  /*background-image: url("Images/Menu.png");*/
-  background-color: #002040;
+  background-image: url("Images/menu.png");
   display: block;
   width: 100%;
   box-shadow: 0px 3px 3px black;
@@ -141,7 +140,8 @@ aside h3 {
 footer {
   display: block;
   /*background-color: #041d36;*/
-  background-color: #002040;
+  /*background-color: #002040;*/
+  background-image: url("Images/footer.png");
   text-align: center;
 }
 
@@ -201,6 +201,18 @@ footer h4 {
   margin: 15px 0;
 }
 
+.sponsors h4 {
+  display: block;
+}
+
+.sponsors {
+  display: inline-block;
+}
+
+.sponsor {
+  margin: 2%;
+  vertical-align: middle;
+}
 
 /*--------------------------------------------------------------*/
 /*   contenu                                                    */
