@@ -12,10 +12,14 @@ body {
 }
 
 /* For mobile phones: */
+@media only screen and (max-width: 600px) {
+   .hidden-s{display: none !important;}
+}
+
 [class*="col-"] {
    width: 100%;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
    /* For tablets: */
    .col-m-1 {width: 8.33%;}
    .col-m-2 {width: 16.66%;}
@@ -29,8 +33,10 @@ body {
    .col-m-10 {width: 83.33%;}
    .col-m-11 {width: 91.66%;}
    .col-m-12 {width: 100%;}
+
+   .hidden-s{display: none;}
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 868px) {
    /* For desktop: */
    .col-1 {width: 8.33%;}
    .col-2 {width: 16.66%;}
@@ -46,6 +52,21 @@ body {
    .col-12 {width: 100%;}
 }
 
+@media only screen and (min-width: 1268px) {
+   /* For desktop: */
+   .col-l-1 {width: 8.33%;}
+   .col-l-2 {width: 16.66%;}
+   .col-l-3 {width: 25%;}
+   .col-l-4 {width: 33.33%;}
+   .col-l-5 {width: 41.66%;}
+   .col-l-6 {width: 50%;}
+   .col-l-7 {width: 58.33%;}
+   .col-l-8 {width: 66.66%;}
+   .col-l-9 {width: 75%;}
+   .col-l-10 {width: 83.33%;}
+   .col-l-11 {width: 91.66%;}
+   .col-l-12 {width: 100%;}
+}
 /*--------------------------------------------------------------*/
 /*   bannière                                                   */
 /*--------------------------------------------------------------*/
@@ -74,7 +95,7 @@ body {
   display: inline-block;
   color: white;
   line-height: 50px;
-  font-size: 28px;
+  font-size: 24px;
   font-variant: small-caps;
   font-family: sans-serif;
   text-align: center;
@@ -222,7 +243,9 @@ footer h4 {
 section {
   display: inline-block;
   vertical-align: top;
-  margin-left: 25%;
+  padding-left: 2%;
+  padding-bottom: 35px;
+  padding-top: 20px;
 }
 
 section h1 {
@@ -237,11 +260,15 @@ section h2 {
   color: #0080ff;
   font-family: "Noto sans", "Arial", sans-serif;
   font-size: 24px;
-  padding: 0px 25px;
+  padding: 10px 25px;
 }
 
 section p {
   padding: 7px 45px;
   text-align: justify;
   font-family: "Noto sans", "Arial", sans-serif;
+}
+
+.margin-box {
+  display: inline-block;
 }
