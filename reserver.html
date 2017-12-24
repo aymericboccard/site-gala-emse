@@ -8,90 +8,61 @@
   <meta name="description" content="Afin de célébrer l’entrée dans son troisième siècle d’histoire, ainsi que le diplôme de la promotion 2013, l’École des Mines organise son Gala le 4 février 2017. A cette occasion, les élèves étudiant actuellement à l’École retrouvent les nouveaux diplômés et les anciennes promotions, et rejoignent corps enseignant et personnel administratif pour une soirée de prestige."
   />
 
-
   <link rel="stylesheet" href="styletest.css" type="text/css" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-
-  <script type="text/javascript" src="js/Anim1.js"></script>
-  <script type="text/javascript" src="js/Anim2.js"></script>
-  <script type="text/javascript" src="js/compteur.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   <script src="js/w3.js"></script>
 </head>
 
 
 <body onresize="resize()" onload="resize()">
 
-<img class="col-12 hidden-s" id="banner" src="Images/banniere2.png">
+  <img class="col-12 hidden-s" id="banner" src="Images/banniere2.png">
 
   <div w3-include-html="menus/menu_principal.html" id="main"></div>
 
   <div w3-include-html="menus/menu_deroulant.html"></div>
 
-  <section>
-    <div id="premier"></div>
-    <div id="premiermob"></div>
-  </section>
+  <div w3-include-html="menus/sidebar.html" class="col-l-2 col-3 col-m-3 hidden-s" id="side"></div><!--
 
-  <div w3-include-html="menus/sidebar.html"></div>
+  --><section class="col-l-2 col-3 col-m-3 margin-box hidden-s"></section><!--
+  --><section class="col-l-10 col-9 col-m-9" id="content">
+    <h1> Réserver </h1>
 
-  <section id="conteneur">
-
-
-    <div id="articles">
-      <div id="nomPage"> Réserver </div>
-      <div class="rubrique">
-
-        <p></p>
-        <p>Vous pouvez ici directement réserver vos places pour le Gala des Mines 2018, dans le respect des dates ci-dessous. </p>
-        <p>La vente de places pour le dîner s’étale du XX au XX février 2018. </p>
-        <p>La vente de places pour le spectacle s’étale du XX au XX février 2018. </p>
+    <p>Vous pouvez ici directement réserver vos places pour le Gala des Mines 2018, dans le respect des dates ci-dessous. </p>
+    <p>La vente de places pour le dîner s’étale du XX au XX février 2018. </p>
+    <p>La vente de places pour le spectacle s’étale du XX au XX février 2018. </p>
 
 
 
-        <h3>Informations</h3>
+    <h2>Informations</h2>
 
-        <p>Nous vous proposons de régler votre achat selon votre convenance, soit sur notre plateforme de paiement en ligne sécurisée, soit par chèque en main propre.</p>
+    <p>Nous vous proposons de régler votre achat selon votre convenance, soit sur notre plateforme de paiement en ligne sécurisée, soit par chèque en main propre.</p>
 
-        <p>Une carte porte-monnaie électronique délivrée à l’accueil vous permettra de régler vos consommations pendant la soirée. Vous pourrez la créditer à tout moment aux stands de recharge, par CB ou en espèces. Pour éviter l’attente, nous vous recommandons
-          dès à présent l’achat d’une carte consommations pré-chargée (d’un montant de 10€).</p>
+    <p>Une carte porte-monnaie électronique délivrée à l’accueil vous permettra de régler vos consommations pendant la soirée. Vous pourrez la créditer à tout moment aux stands de recharge, par CB ou en espèces. Pour éviter l’attente, nous vous recommandons
+      dès à présent l’achat d’une carte consommations pré-chargée (d’un montant de 10€).</p>
 
-        <div class="listT">
-          <ul>
-            <li>Règlement par chèque</li>
-          </ul>
-        </div>
-        <p>Plusieurs permanences seront organisées pendant le mois de janvier à Saint-Étienne, aussi bien à la Maison des Élèves que dans les locaux de l’Ecole des Mines, pour recueillir vos inscriptions. Vous recevrez vos billets par courrier électronique
-          une fois le chèque déposé à l’association Gala des Mines Saint-Étienne.</p>
+    <h3 class="payment">Règlement par chèque</h3>
 
-        <div class="listT">
-          <ul>
-            <li>Règlement par paiement en ligne sécurisé</li>
-          </ul>
-        </div>
+    <p>Plusieurs permanences seront organisées pendant le mois de janvier à Saint-Étienne, aussi bien à la Maison des Élèves que dans les locaux de l’Ecole des Mines, pour recueillir vos inscriptions. Vous recevrez vos billets par courrier électronique une
+      fois le chèque déposé à l’association Gala des Mines Saint-Étienne.</p>
 
-        <p>Les frais de paiement en ligne sont de 1€ par billet (commission plateforme), et sont offerts pour l’achat d’un billet avec carte consommations pré-chargée.
-        </p>
+    <h3 class="payment">Règlement par paiement en ligne sécurisé</h3>
+
+    <p>Les frais de paiement en ligne sont de 1€ par billet (commission plateforme), et sont offerts pour l’achat d’un billet avec carte consommations pré-chargée.
+    </p>
 
 
-        <div class="rubrique">
-          <h3> Plateforme de paiement </h3>
+    <h2> Plateforme de paiement </h2>
 
-          <a title="Vente de billets en ligne" href="https://www.billetweb.fr/shop.php?event=gala-2017-mines-de-saint-tienne" class="shop_frame" target="_blank" data-src="https://www.billetweb.fr/shop.php?event=gala-2017-mines-de-saint-tienne" data-max-width="100%"
-            data-initial-height="600" data-id="gala-2017-mines-de-saint-tienne" data-resize="1">Vente de billets en ligne</a>
-          <script type="text/javascript" src="https://www.billetweb.fr/js/export.js"></script>
+    <a title="Vente de billets en ligne" href="https://www.billetweb.fr/shop.php?event=gala-icm-2018-ecole-des-mines-de-saint-etienne"  class="shop_frame"  target="_blank"  data-src="https://www.billetweb.fr/shop.php?event=gala-icm-2018-ecole-des-mines-de-saint-etienne"  data-max-width="100%"  data-initial-height="248"  data-id="gala-icm-2018-ecole-des-mines-de-saint-etienne"  data-resize="1">Vente de billets en ligne</a>
+    <script type="text/javascript" src="https://www.billetweb.fr/js/export.js"></script>
 
-          <div class="remarque">(Si le module de paiement ne se charge pas correctement sous Firefox, veuillez essayer avec un autre navigateur internet afin de compléter votre commande)</div>
-        </div>
+    <div class="remarque">(Si le module de paiement ne se charge pas correctement sous Firefox, veuillez essayer avec un autre navigateur internet afin de compléter votre commande)</div>
 
-      </div>
   </section>
 
   <div w3-include-html="footer/footer.html"></div>
-
-
-
 
 </body>
 
@@ -102,6 +73,7 @@
 </script>
 
 <script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/side_sizing.js"></script>
 
 
 

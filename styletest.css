@@ -165,6 +165,7 @@ footer {
   /*background-color: #002040;*/
   background-image: url("Images/footer.png");
   text-align: center;
+  z-index: 2;
 }
 
 footer * {
@@ -293,4 +294,8 @@ section p {
 iframe {
   margin: 0 auto;
   display: block;
+}
+
+.payment {
+  padding: 7px 30px;
 }
