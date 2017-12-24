@@ -20,7 +20,7 @@
     </head>
 
 
-<body onresize="myFunction()" onload="myFunction()"  >
+<body onresize="resize()" onload="resize()">
 
 <div id="bgsidebar"></div>
 
@@ -36,7 +36,7 @@
 	<div id=dmenumobo></div>
 	<div id=dmenumobf></div>
 </div>
-	
+
 	<div w3-include-html="menus/menu_deroulant.html"></div>
 
 <section>
@@ -57,10 +57,10 @@
 
 	<h3> Oups! cette page n'est pas encore disponible... </h3>
 
-	
+
 	</div>
-	
-	
+
+
 </div>
 </section>
 
@@ -157,7 +157,7 @@ CDown.prototype = {
 
 		// if no active counts, stop updating
 		if(this.counts.length==0) window.clearTimeout(this.interval);
-		
+
 	},
 	display: function(cnt,msg){
 		document.getElementById(cnt.id).innerHTML=msg;

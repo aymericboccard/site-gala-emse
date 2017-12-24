@@ -20,7 +20,7 @@
     </head>
 
 
-<body onresize="myFunction()" onload="myFunction()"  >
+<body onresize="resize()" onload="resize()">
 
 <div id="bgsidebar"></div>
 
@@ -34,7 +34,7 @@
 	<div id=dmenumobo></div>
 	<div id=dmenumobf></div>
 </div>
-	
+
 	<div w3-include-html="menus/menu_deroulant.html"></div>
 
 <section>
@@ -52,7 +52,7 @@
 	<div id="nomPage"> Accès - Hébergement - Navettes </div>
 
 	<div class="rubrique">
-	
+
 	<h3> Adresses </h3>
 
 	<div class="conteneurRubrique2">
@@ -82,7 +82,7 @@
 
 
 	<div class="rubrique">
-	
+
 	<h3> Hôtels </h3>
 
 	<div class="brutsansmarge">
@@ -94,7 +94,7 @@
 			<ul>
 				<li>Kyriad **</li>
 				<li>Astoria ***</li>
-				
+
 			</ul>
 			</div>
 
@@ -102,7 +102,7 @@
 			<ul>
 				<li>55€</li>
 				<li>64€</li>
-				
+
 			</ul>
 			</div>
 	</div>
@@ -114,7 +114,7 @@ Découvrez la localisation de ces hôtels sur la carte ci-dessous.
 
 
 	<div class="rubrique">
-	
+
 	<h3> Navettes</h3>
 
 	<p>Des navettes mises en place à intervalles réguliers entre 19h et 04h relieront le Centre de Congrès avec la Maison des Élèves, ainsi qu’avec les différents hôtels partenaires. </p>
@@ -255,7 +255,7 @@ Découvrez la localisation de ces hôtels sur la carte ci-dessous.
 					<li>02h00</li>
 					<li>02h45</li>
 					<li>03h30</li>
-					<li>04h00</li>		
+					<li>04h00</li>
 				</ul>
 			</div>
 
@@ -274,14 +274,14 @@ Découvrez la localisation de ces hôtels sur la carte ci-dessous.
 </div>
 
 	<div class="rubrique">
-	
+
 	<h3> Plan d'accès </h3>
 		<iframe src="https://www.google.com/maps/d/embed?mid=1lhmVD1Tq0FZCLNs1MciDLHhHB14" width="640" height="480"></iframe>
 
 	</div>
 
 
-	
+
 </div>
 </section>
 
@@ -380,7 +380,7 @@ CDown.prototype = {
 
 		// if no active counts, stop updating
 		if(this.counts.length==0) window.clearTimeout(this.interval);
-		
+
 	},
 	display: function(cnt,msg){
 		document.getElementById(cnt.id).innerHTML=msg;
