@@ -2,59 +2,47 @@
 <html>
 
 <head>
-    <title>Gala Illumines 2018 - EMSE</title>
-    <meta charset="utf-8" />
-    <meta name="keywords" content="gala, gala 2018,emse,gala emse, gala emse 2018,gala illumines,illumines, mines, mines sainté, école des mines" />
-    <meta name="description" content="Afin de célébrer l’entrée dans son troisième siècle d’histoire, ainsi que le diplôme de la promotion 2013, l’École des Mines organise son Gala le 4 février 2017. A cette occasion, les élèves étudiant actuellement à l’École retrouvent les nouveaux diplômés et les anciennes promotions, et rejoignent corps enseignant et personnel administratif pour une soirée de prestige." />
+  <title>Gala Illumines 2018 - EMSE</title>
+  <meta charset="utf-8" />
+  <meta name="keywords" content="gala, gala 2018,emse,gala emse, gala emse 2018,gala illumines,illumines, mines, mines sainté, école des mines" />
+  <meta name="description" content="Afin de célébrer l’entrée dans son troisième siècle d’histoire, ainsi que le diplôme de la promotion 2013, l’École des Mines organise son Gala le 4 février 2017. A cette occasion, les élèves étudiant actuellement à l’École retrouvent les nouveaux diplômés et les anciennes promotions, et rejoignent corps enseignant et personnel administratif pour une soirée de prestige."
+  />
 
 
-    <link rel="stylesheet" href="styletest.css" type="text/css" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-
-    <script type="text/javascript" src="js/Anim1.js"></script>
-    <script type="text/javascript" src="js/Anim2.js"></script>
-    <script type="text/javascript" src="js/compteur.js"></script>
-    <script src="js/w3.js"></script>
+  <link rel="stylesheet" href="styletest.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <script src="js/w3.js"></script>
 </head>
 
 
 <body onresize="resize()" onload="resize()">
 
-    <img class="col-12 hidden-s" id="banner" src="Images/banniere2.png">
-    <div w3-include-html="menus/menu_principal.html" id="main"></div>
+  <img class="col-12 hidden-s" id="banner" src="Images/banniere2.png">
+  <div w3-include-html="menus/menu_principal.html" id="main"></div>
 
-    <div w3-include-html="menus/menu_deroulant.html"></div>
+  <div w3-include-html="menus/menu_deroulant.html"></div>
 
-    <section>
-        <div id="premier"></div>
-        <div id="premiermob"></div>
-    </section>
+  <div w3-include-html="menus/sidebar.html" class="col-l-2 col-3 col-m-3 hidden-s" id="side"></div><!--
 
-    <div w3-include-html="menus/sidebar.html"></div>
+  --><section class="col-l-2 col-3 col-m-3 margin-box hidden-s"></section><!--
+  --><section class="col-l-10 col-9 col-m-9" id="content">
+    <h1> Le spectacle </h1>
 
-    <section id="conteneur">
-        <div id="articles">
-            <div id="nomPage"> Le spectacle </div>
+    <p>Attention! La vente de places pour le spectacle sera cloturée le Jeudi 2 Février 2017</p>
 
-            <div class="rubrique">
+    <h2> Présentation </h2>
 
-                <p></p>
-                <p>Attention! La vente de places pour le spectacle sera cloturée le Jeudi 2 Février 2017</p>
+    <p>Assister au spectacle, c’est l’occasion de découvrir les talents qui s’expriment au travers des différentes associations culturelles créées par les élèves de l’École des Mines. Que ce soit par l’humour décapant des élèves de 3ème année lors de la
+      fameuse « Revue 3A » ou en découvrant les multiples volte-face des danseurs Rock, le spectacle révèlera bien des facettes du Mineur Stéphanois ! </p>
 
-                <h3> Présentation </h3>
+    <img src="Images/spectacle.jpg" alt="Spectacle" style="width: 50% ; margin-left: 25%; margin-top: 10px" />
 
-                <p>Assister au spectacle, c’est l’occasion de découvrir les talents qui s’expriment au travers des différentes associations culturelles créées par les élèves de l’École des Mines. Que ce soit par l’humour décapant des élèves de 3ème année lors de la fameuse « Revue 3A » ou en découvrant les multiples volte-face des danseurs Rock, le spectacle révèlera bien des facettes du Mineur Stéphanois ! </p>
+    </div>
+    </div>
 
-                <img src="Images/spectacle.jpg" alt="Spectacle" style="width: 50% ; margin-left: 25%; margin-top: 10px" />
+  </section>
 
-            </div>
-        </div>
-
-    </section>
-
-    <div w3-include-html="footer/footer.html"></div>
+  <div w3-include-html="footer/footer.html"></div>
 
 
 
@@ -63,12 +51,11 @@
 <!-- ..........................script...................................... -->
 
 <script>
-    w3.includeHTML();
-
+  w3.includeHTML();
 </script>
 
 <script type="text/javascript" src="js/scroll.js"></script>
-
+<script type="text/javascript" src="js/side_sizing.js"></script>
 
 
 <!-- crédit Thomas Gensous/Charles Couprie ICM2014 -->
