@@ -181,22 +181,26 @@ footer a:hover {
   color: #ff2d2d;
 }
 
-footer div {
+.sponsors div {
   vertical-align: middle;
   display: inline-block;
   margin: 15px;
 }
 
 #logo {
-  background-image: url("Images/logomines.png");
+  /*background-image: url("Images/logomines.png");*/
   display: inline-block;
-  height: 200px;
+  vertical-align: middle;
 }
 
 #reseauxsociaux img {
   height: 50px;
   width: 50px;
   vertical-align: middle;
+}
+
+#reseauxsociaux {
+  text-align: left;
 }
 
 #restext1 {
@@ -207,6 +211,12 @@ footer div {
 
 #restext2 {
   color: #0073cc;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+#restext3 {
+  color: #D6DB3A;
   font-size: 18px;
   vertical-align: middle;
 }
@@ -234,6 +244,11 @@ footer h4 {
 .sponsor {
   margin: 2%;
   vertical-align: middle;
+}
+
+.sponsors, #reseauxsociaux, #contact {
+  vertical-align: middle;
+  display: inline-block;
 }
 
 /*--------------------------------------------------------------*/
