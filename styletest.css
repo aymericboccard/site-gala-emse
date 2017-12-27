@@ -241,6 +241,7 @@ footer * {
   width: 50px;*/
   display: inline-block;
   vertical-align: middle;
+  max-width: 75px;
 }
 
 #reseauxsociaux {
@@ -369,6 +370,14 @@ section a:hover {
 
 .menu-p-last {
   margin-bottom: 48px;
+}
+
+#note {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #999999;
+  margin-right: 25px;
+  font-size: 14px;
 }
 
 /*--------------------------------------------------------------*/
