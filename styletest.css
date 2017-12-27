@@ -333,6 +333,16 @@ section a:hover {
   max-width: 300px;
 }
 
+#img-diner {
+  margin: 20px auto;
+  display: block;
+  max-width: 600px;
+}
+
+#menu-big-title {
+  text-align: center;
+}
+
 .menu-title {
   display: block;
   text-align: center;
