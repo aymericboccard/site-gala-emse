@@ -285,6 +285,11 @@ section p {
   display: inline-block;
 }
 
+#img-defile {
+  margin: 20px auto;
+  display: block;
+}
+
 
 /*--------------------------------------------------------------*/
 /*   acces                                                      */
