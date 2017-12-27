@@ -272,7 +272,7 @@ section p {
   text-align: justify;
 }
 
-section a {
+.contact {
   display: inline-block;
   text-decoration: none;
   color: black;
