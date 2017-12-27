@@ -175,7 +175,6 @@ footer {
   /*background-color: #002040;*/
   background-image: url("Images/footer.png");
   text-align: center;
-  z-index: 2;
 }
 
 footer * {
@@ -241,6 +240,7 @@ footer h4 {
   vertical-align: middle;
   display: inline-block;
 }
+
 
 /*--------------------------------------------------------------*/
 /*   contenu                                                    */
