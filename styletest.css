@@ -241,7 +241,8 @@ footer * {
   width: 50px;*/
   display: inline-block;
   vertical-align: middle;
-  max-width: 75px;
+  text-align: center;
+  max-width: 150px;
 }
 
 #reseauxsociaux {
@@ -385,9 +386,10 @@ section a:hover {
 /*--------------------------------------------------------------*/
 
 .place {
-  display: inline-block;
-  vertical-align: top;
-  margin: 2%;
+  display: block;
+  /*vertical-align: top;*/
+  margin: 20px auto;
+  max-width: 500px;
 }
 
 .hotels, .prices {
