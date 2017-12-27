@@ -241,6 +241,10 @@ footer h4 {
   display: inline-block;
 }
 
+.logo-max-width {
+  max-width: 200px;
+}
+
 
 /*--------------------------------------------------------------*/
 /*   contenu                                                    */
