@@ -197,6 +197,7 @@ footer * {
   /*height: 50px;
   width: 50px;*/
   display: inline-block;
+  max-width: 70px;
 }
 
 #reseauxsociaux a {
@@ -208,7 +209,6 @@ footer * {
 
 #reseauxsociaux {
   text-align: left;
-  width: 50px;
 }
 
 footer h4 {
