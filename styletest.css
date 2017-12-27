@@ -294,6 +294,7 @@ section a:hover {
 #img-defile {
   margin: 20px auto;
   display: block;
+  max-width: 300px;
 }
 
 .menu-title {
