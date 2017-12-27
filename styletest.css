@@ -15,6 +15,17 @@ body {
 /* For mobile phones: */
 @media only screen and (max-width: 700px) {
    .hidden-s{display: none !important;}
+   .font-s-14{font-size: 14 !important;}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 868px) {
+   .hidden-m{display: none !important;}
+   .font-m-14{font-size: 14 !important;}
+}
+
+@media only screen and (min-width: 868px) {
+   .hidden{display: none !important;}
+   .font-18{font-size: 18 !important;}
 }
 
 [class*="col-"] {
@@ -35,7 +46,6 @@ body {
    .col-m-11 {width: 91.66%;}
    .col-m-12 {width: 100%;}
 
-   .hidden-s{display: none;}
 }
 @media only screen and (min-width: 868px) {
    /* For desktop: */
@@ -194,31 +204,21 @@ footer a:hover {
 }
 
 #reseauxsociaux img {
-  height: 50px;
-  width: 50px;
+  /*height: 50px;
+  width: 50px;*/
+  display: inline-block;
+}
+
+#reseauxsociaux a {
+  /*height: 50px;
+  width: 50px;*/
+  display: inline-block;
   vertical-align: middle;
 }
 
 #reseauxsociaux {
   text-align: left;
-}
-
-#restext1 {
-  color: #19b2f5;
-  font-size: 18px;
-  vertical-align: middle;
-}
-
-#restext2 {
-  color: #0073cc;
-  font-size: 18px;
-  vertical-align: middle;
-}
-
-#restext3 {
-  color: #D6DB3A;
-  font-size: 18px;
-  vertical-align: middle;
+  width: 50px;
 }
 
 footer h4 {
