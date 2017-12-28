@@ -7,6 +7,7 @@
 
 body {
   margin: auto;
+  position: relative;
   padding: 0;
   height: 100%;
   background-image: url("Images/fond.png");
@@ -149,7 +150,7 @@ aside h3 {
 }
 
 #side {
-  display: inline-block;
+  display: block;
   /*background-color: #dddddd;*/
   background-image: url("Images/sidebar.png");
   position: absolute;
@@ -211,6 +212,13 @@ footer {
   /*background-color: #002040;*/
   background-image: url("Images/footer.png");
   text-align: center;
+}
+
+#footer {
+  position: absolute;
+  /*bottom: 0px;
+  left: 0px;*/
+  z-index: 2;
 }
 
 footer * {
