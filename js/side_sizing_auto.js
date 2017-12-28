@@ -8,4 +8,4 @@ function resize() {
     document.getElementById('content').style.height = 232+"px";
   }
 }
- setInterval(resize, 2000);
+ setInterval(resize, 1000);
