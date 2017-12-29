@@ -322,6 +322,11 @@ section p {
   text-align: justify;
 }
 
+section ul {
+  padding: 7px 105px;
+  text-align: justify;
+}
+
 .contact {
   display: inline-block;
   text-decoration: none;
