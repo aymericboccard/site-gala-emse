@@ -423,14 +423,10 @@ section a:hover {
   max-width: 500px;
 }
 
-.hotels, .prices {
-  display: inline-block;
-  vertical-align: top;
-}
-
 .hotels {
-  font-weight: bold;
-  margin-left: 20%;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 0;
 }
 
 iframe {
